@@ -1,0 +1,17 @@
+[plugin.runtime]
+kind = "page-definition"
+artifact = "dist/pages.json"
+
+[plugin.capabilities]
+network = []
+filesystem = []
+database = false
+
+[[plugin.subplugins]]
+id = "aio-plugin-ts-pages"
+pages = ["aio-plugin-ts-pages"]
+
+[[plugin.subplugins]]
+id = "aio-plugin-ts-pages-about"
+dependencies = ["aio-plugin-ts-pages"]
+pages = ["aio-plugin-ts-pages-about"]
