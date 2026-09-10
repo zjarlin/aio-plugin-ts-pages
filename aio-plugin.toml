@@ -2,6 +2,12 @@
 kind = "page-definition"
 artifact = "dist/pages.json"
 
+[plugin.marketplace]
+title = "TypeScript Static Pages"
+summary = "使用 TypeScript 生成语言无关的 PageDefinition JSON 静态页面，不创建运行时实例。"
+license = "MIT"
+tags = ["example", "typescript", "page-definition"]
+
 [plugin.capabilities]
 network = []
 filesystem = []
